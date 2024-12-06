@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DbSiparisOtomasyonDataSet7" targetNamespace="http://tempuri.org/DbSiparisOtomasyonDataSet7.xsd" xmlns:mstns="http://tempuri.org/DbSiparisOtomasyonDataSet7.xsd" xmlns="http://tempuri.org/DbSiparisOtomasyonDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DbSiparisOtomasyonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbSiparisOtomasyonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SiparişOtomasyon.Properties.Settings.GlobalReference.Default.DbSiparisOtomasyonConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TblEslesmelerleTableAdapter" GeneratorDataComponentClassName="TblEslesmelerleTableAdapter" Name="TblEslesmelerle" UserDataComponentName="TblEslesmelerleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DbSiparisOtomasyonConnectionString (Settings)" DbObjectName="DbSiparisOtomasyon.dbo.TblEslesmelerle" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Vkn, MusteriID, Unvan, AdresID, AdresAdi, İl, İlce, Apak FROM dbo.TblEslesmelerle</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Vkn" DataSetColumn="Vkn" />
+              <Mapping SourceColumn="MusteriID" DataSetColumn="MusteriID" />
+              <Mapping SourceColumn="Unvan" DataSetColumn="Unvan" />
+              <Mapping SourceColumn="AdresID" DataSetColumn="AdresID" />
+              <Mapping SourceColumn="AdresAdi" DataSetColumn="AdresAdi" />
+              <Mapping SourceColumn="İl" DataSetColumn="İl" />
+              <Mapping SourceColumn="İlce" DataSetColumn="İlce" />
+              <Mapping SourceColumn="Apak" DataSetColumn="Apak" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DbSiparisOtomasyonDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DbSiparisOtomasyonDataSet7" msprop:Generator_DataSetName="DbSiparisOtomasyonDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblEslesmelerle" msprop:Generator_RowEvHandlerName="TblEslesmelerleRowChangeEventHandler" msprop:Generator_RowDeletedName="TblEslesmelerleRowDeleted" msprop:Generator_RowDeletingName="TblEslesmelerleRowDeleting" msprop:Generator_RowEvArgName="TblEslesmelerleRowChangeEvent" msprop:Generator_TablePropName="TblEslesmelerle" msprop:Generator_RowChangedName="TblEslesmelerleRowChanged" msprop:Generator_RowChangingName="TblEslesmelerleRowChanging" msprop:Generator_TableClassName="TblEslesmelerleDataTable" msprop:Generator_RowClassName="TblEslesmelerleRow" msprop:Generator_TableVarName="tableTblEslesmelerle" msprop:Generator_UserTableName="TblEslesmelerle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Vkn" msprop:Generator_ColumnPropNameInRow="Vkn" msprop:Generator_ColumnPropNameInTable="VknColumn" msprop:Generator_ColumnVarNameInTable="columnVkn" msprop:Generator_UserColumnName="Vkn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MusteriID" msprop:Generator_ColumnPropNameInRow="MusteriID" msprop:Generator_ColumnPropNameInTable="MusteriIDColumn" msprop:Generator_ColumnVarNameInTable="columnMusteriID" msprop:Generator_UserColumnName="MusteriID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unvan" msprop:Generator_ColumnPropNameInRow="Unvan" msprop:Generator_ColumnPropNameInTable="UnvanColumn" msprop:Generator_ColumnVarNameInTable="columnUnvan" msprop:Generator_UserColumnName="Unvan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdresID" msprop:Generator_ColumnPropNameInRow="AdresID" msprop:Generator_ColumnPropNameInTable="AdresIDColumn" msprop:Generator_ColumnVarNameInTable="columnAdresID" msprop:Generator_UserColumnName="AdresID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdresAdi" msprop:Generator_ColumnPropNameInRow="AdresAdi" msprop:Generator_ColumnPropNameInTable="AdresAdiColumn" msprop:Generator_ColumnVarNameInTable="columnAdresAdi" msprop:Generator_UserColumnName="AdresAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İl" msprop:Generator_ColumnPropNameInRow="İl" msprop:Generator_ColumnPropNameInTable="İlColumn" msprop:Generator_ColumnVarNameInTable="columnİl" msprop:Generator_UserColumnName="İl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İlce" msprop:Generator_ColumnPropNameInRow="İlce" msprop:Generator_ColumnPropNameInTable="İlceColumn" msprop:Generator_ColumnVarNameInTable="columnİlce" msprop:Generator_UserColumnName="İlce" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apak" msprop:Generator_ColumnPropNameInRow="Apak" msprop:Generator_ColumnPropNameInTable="ApakColumn" msprop:Generator_ColumnVarNameInTable="columnApak" msprop:Generator_UserColumnName="Apak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

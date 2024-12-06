@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbSiparisOtomasyonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Hedef">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Unvan" Type="nvarchar" MaxLength="500" />
+    <Property Name="AdresAdı" Type="nvarchar" MaxLength="500" />
+    <Property Name="İl" Type="nvarchar" MaxLength="500" />
+    <Property Name="İlce" Type="nvarchar" MaxLength="500" />
+    <Property Name="Tanımla" Type="nvarchar" MaxLength="500" />
+    <Property Name="AdresID" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TblEslesmelerle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Vkn" Type="varchar" MaxLength="500" />
+    <Property Name="MusteriID" Type="varchar" MaxLength="500" />
+    <Property Name="Unvan" Type="varchar" MaxLength="500" />
+    <Property Name="AdresID" Type="varchar" MaxLength="500" />
+    <Property Name="AdresAdi" Type="varchar" MaxLength="500" />
+    <Property Name="İl" Type="varchar" MaxLength="500" />
+    <Property Name="İlce" Type="varchar" MaxLength="500" />
+    <Property Name="Adko" Type="varchar" MaxLength="500" />
+    <Property Name="Apak" Type="varchar" MaxLength="500" />
+    <Property Name="Reka" Type="varchar" MaxLength="500" />
+    <Property Name="TekirdagUn" Type="varchar" MaxLength="500" />
+    <Property Name="Sudesan" Type="varchar" MaxLength="500" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Milhans" Type="varchar" MaxLength="500" />
+    <Property Name="Dogtas" Type="varchar" MaxLength="500" />
+    <Property Name="Gezer" Type="varchar" MaxLength="500" />
+    <Property Name="EsGlobal" Type="varchar" MaxLength="500" />
+    <Property Name="MutluMakarna" Type="varchar" MaxLength="500" />
+    <Property Name="Saruhan" Type="varchar" MaxLength="500" />
+    <Property Name="KucukBay" Type="varchar" MaxLength="500" />
+    <Property Name="Bunge" Type="varchar" MaxLength="500" />
+    <Property Name="Hedef" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TblGezer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vkn" Type="nvarchar" MaxLength="500" />
+    <Property Name="AdresID" Type="nvarchar" MaxLength="500" />
+    <Property Name="Unvan" Type="nvarchar" MaxLength="500" />
+    <Property Name="AdresAdi" Type="nvarchar" MaxLength="500" />
+    <Property Name="Il" Type="nvarchar" MaxLength="500" />
+    <Property Name="Ilce" Type="nvarchar" MaxLength="500" />
+    <Property Name="AdresIlVeIlce" Type="nvarchar" MaxLength="500" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="500" />
+    <Property Name="MusteridenGelen" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TblGezerProjeler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="projelerID" Type="nvarchar" MaxLength="500" />
+    <Property Name="FaturaFirmasıUnvanı" Type="nvarchar" MaxLength="500" />
+    <Property Name="Proje" Type="nvarchar" MaxLength="500" />
+    <Property Name="Hizmet" Type="nvarchar" MaxLength="500" />
+    <Property Name="Vade" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="DbSiparisOtomasyonModelStoreContainer">
+    <EntitySet Name="Hedef" EntityType="Self.Hedef" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblEslesmelerle" EntityType="Self.TblEslesmelerle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblGezer" EntityType="Self.TblGezer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblGezerProjeler" EntityType="Self.TblGezerProjeler" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

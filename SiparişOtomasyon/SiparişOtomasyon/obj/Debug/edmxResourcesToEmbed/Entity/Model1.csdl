@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbSiparisOtomasyonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TblEslesmelerle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Vkn" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MusteriID" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Unvan" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AdresID" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AdresAdi" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="İl" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="İlce" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Adko" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Apak" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Reka" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TekirdagUn" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Sudesan" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Milhans" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Dogtas" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Gezer" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="EsGlobal" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MutluMakarna" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Saruhan" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="KucukBay" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Bunge" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Hedef" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DbSiparisOtomasyonEntities6" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblEslesmelerle" EntityType="Self.TblEslesmelerle" />
+    <EntitySet Name="TblGezer" EntityType="DbSiparisOtomasyonModel.TblGezer" />
+    <EntitySet Name="TblGezerProjeler" EntityType="DbSiparisOtomasyonModel.TblGezerProjeler" />
+    <EntitySet Name="Hedef" EntityType="DbSiparisOtomasyonModel.Hedef" />
+  </EntityContainer>
+  <EntityType Name="TblGezer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vkn" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AdresID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Unvan" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AdresAdi" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Il" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Ilce" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AdresIlVeIlce" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MusteridenGelen" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TblGezerProjeler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="projelerID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="FaturaFirmasıUnvanı" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Proje" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Hizmet" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Vade" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Hedef">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Unvan" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AdresAdı" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="İl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="İlce" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Tanımla" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AdresID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

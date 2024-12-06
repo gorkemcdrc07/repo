@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbSiparisOtomasyonModelStoreContainer" CdmEntityContainer="DbSiparisOtomasyonEntities6">
+    <EntitySetMapping Name="TblEslesmelerle">
+      <EntityTypeMapping TypeName="DbSiparisOtomasyonModel.TblEslesmelerle">
+        <MappingFragment StoreEntitySet="TblEslesmelerle">
+          <ScalarProperty Name="Hedef" ColumnName="Hedef" />
+          <ScalarProperty Name="Bunge" ColumnName="Bunge" />
+          <ScalarProperty Name="KucukBay" ColumnName="KucukBay" />
+          <ScalarProperty Name="Saruhan" ColumnName="Saruhan" />
+          <ScalarProperty Name="MutluMakarna" ColumnName="MutluMakarna" />
+          <ScalarProperty Name="EsGlobal" ColumnName="EsGlobal" />
+          <ScalarProperty Name="Gezer" ColumnName="Gezer" />
+          <ScalarProperty Name="Dogtas" ColumnName="Dogtas" />
+          <ScalarProperty Name="Vkn" ColumnName="Vkn" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="AdresID" ColumnName="AdresID" />
+          <ScalarProperty Name="AdresAdi" ColumnName="AdresAdi" />
+          <ScalarProperty Name="İl" ColumnName="İl" />
+          <ScalarProperty Name="İlce" ColumnName="İlce" />
+          <ScalarProperty Name="Adko" ColumnName="Adko" />
+          <ScalarProperty Name="Apak" ColumnName="Apak" />
+          <ScalarProperty Name="Reka" ColumnName="Reka" />
+          <ScalarProperty Name="TekirdagUn" ColumnName="TekirdagUn" />
+          <ScalarProperty Name="Sudesan" ColumnName="Sudesan" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Milhans" ColumnName="Milhans" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblGezer">
+      <EntityTypeMapping TypeName="DbSiparisOtomasyonModel.TblGezer">
+        <MappingFragment StoreEntitySet="TblGezer">
+          <ScalarProperty Name="MusteridenGelen" ColumnName="MusteridenGelen" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="AdresIlVeIlce" ColumnName="AdresIlVeIlce" />
+          <ScalarProperty Name="Ilce" ColumnName="Ilce" />
+          <ScalarProperty Name="Il" ColumnName="Il" />
+          <ScalarProperty Name="AdresAdi" ColumnName="AdresAdi" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="AdresID" ColumnName="AdresID" />
+          <ScalarProperty Name="Vkn" ColumnName="Vkn" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblGezerProjeler">
+      <EntityTypeMapping TypeName="DbSiparisOtomasyonModel.TblGezerProjeler">
+        <MappingFragment StoreEntitySet="TblGezerProjeler">
+          <ScalarProperty Name="Vade" ColumnName="Vade" />
+          <ScalarProperty Name="Hizmet" ColumnName="Hizmet" />
+          <ScalarProperty Name="Proje" ColumnName="Proje" />
+          <ScalarProperty Name="FaturaFirmasıUnvanı" ColumnName="FaturaFirmasıUnvanı" />
+          <ScalarProperty Name="projelerID" ColumnName="projelerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hedef">
+      <EntityTypeMapping TypeName="DbSiparisOtomasyonModel.Hedef">
+        <MappingFragment StoreEntitySet="Hedef">
+          <ScalarProperty Name="AdresID" ColumnName="AdresID" />
+          <ScalarProperty Name="Tanımla" ColumnName="Tanımla" />
+          <ScalarProperty Name="İlce" ColumnName="İlce" />
+          <ScalarProperty Name="İl" ColumnName="İl" />
+          <ScalarProperty Name="AdresAdı" ColumnName="AdresAdı" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
